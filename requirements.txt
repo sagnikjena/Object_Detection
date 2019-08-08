@@ -4,6 +4,7 @@ opencv-python
 flask
 Flask-RESTful
 pillow
+gunicorn
 matplotlib
 h5py
 tensorflow
