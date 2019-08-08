@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Object Detection|Demo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/js/mdb.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/main.css">
+
+</head>
+<body class="bg-white">
+    <!-- Navigation bar -->
+    <header class="site-header">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <div class="navbar-nav mr-auto">
+                    <h4 class="text-primary font-weight-bold mr-2">Object</h4>
+                    <h4 class="text-white font-weight-bold">Detetction</h4>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End of Navigation bar -->
+    <main role="main" class="container" style="margin-top: 100px;">
+        <div class="row">
+            <div class="col-md-4">
+                {% block message %}{% endblock %}
+                <div class="d-inline">
+                    {% block preview %}{% endblock %}
+                </div>
+                <div class="row">
+                    <div class="mx-auto">
+                        <div class="btn-group col md-6 mt-4">
+                            <form method="POST" enctype="multipart/form-data" id="target" action="{{ url_for('upload_and_preview') }}">
+                                <label class="btn peach-gradient">
+                                    <i class="fa fa-upload"></i><input type="file" onchange="form.submit()" name="media" style="display:none;">
+                                </label>
+                            </form>
+                            <form method="POST" action="{{ url_for('obj_detect') }}" id="formDetect">
+                                <label class="btn blue-gradient btn-block ml-1">
+                                    <i class="fa fa-crosshairs"></i>Detect<input type="submit" style="display:none;">
+                                </label>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                $('#formDetect').submit(function() {
+                    $('#loader').show(); // show animation
+                        return true; // allow regular form submission
+                });
+            </script>
+            <div class="col-md-6" style="margin-top:50px; margin-left: 190px;">
+                <img src="../static/images/loading.gif" id="loader" style="margin-top: -120px; margin-left: -200px; display: none;">
+                {% block result %}{% endblock %}
+            </div>
+        </div><!-- col-2 -->
+    </main>
+
+
+</body>
+</html>

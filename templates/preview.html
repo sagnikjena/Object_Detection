@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block message %}
+    <a class="text-success">Image uploaded.</a>
+{% endblock %}
+
+{% block preview %}
+    <style>
+        .btn-circle {
+        width: 30px;
+        height: 30px;
+        padding: 6px 0px;
+        border-radius: 15px;
+        text-align: center;
+        font-size: 12px;
+        line-height: 1.42857;
+    }
+    </style>
+    <div class="imagePreview mt-4" id="imgPre" style="background-image: url({{ img_name }});">
+        <a href="{{ url_for('index') }}"><button class="btn btn-danger btn-circle waves-effect ml-2 mt-2" id="rmImg">
+            <i class="fas fa-trash"></i>
+        </button></a>
+    </div>
+{% endblock %}

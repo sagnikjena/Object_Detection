@@ -1,0 +1,1 @@
+web gunicorn obj_detect:app
