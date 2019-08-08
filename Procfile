@@ -1,1 +1,0 @@
-web: gunicorn obj_detect:app --log-file - --log-level debug
