@@ -8,6 +8,8 @@ git clone https://github.com/sagnikjena/Object_Detection.git <your_folder>
 ```
 2. Create a python virtual environment and install the modules in _requirements.txt_
 
+3. Add a folder called __model__ in the clone directory and download and save the resnet model file there from this [link](https://github.com/OlafenwaMoses/ImageAI/releases/download/1.0/resnet50_coco_best_v2.0.1.h5)
+
 3. Run the app while the environment is active:
 ```
 python obj_detect.py
