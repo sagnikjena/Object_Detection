@@ -1,6 +1,6 @@
 numpy
 scipy
-opencv-python-headless
+opencv-python
 flask
 Flask-RESTful
 Flask-Uploads
