@@ -1,8 +1,9 @@
 numpy
 scipy
-opencv-python
+opencv-python-headless
 flask
 Flask-RESTful
+Flask-Uploads
 pillow
 matplotlib
 h5py
