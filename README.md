@@ -12,6 +12,18 @@ git clone https://github.com/sagnikjena/Object_Detection.git <your_folder>
 ```
 python obj_detect.py
 ```
-A big shoutout to [Moses Olafenwa](https://twitter.com/OlafenwaMoses), [John Olafenwa](https://twitter.com/johnolafenwa) and the rest of the team in [ImageAI](http://imageai.org/#) for making our lives so much easier.
-
 ## Highlights from the app
+
+### Landing page:
+![](static/images/screenshot1.jpg)
+
+### Image uploaded:
+![](static/images/screenshot2.jpg)
+
+### Processing uploaded image:
+![](static/images/screenshot3.jpg)
+
+### Result page:
+![](static/images/screenshot4.jpg)
+
+A big shoutout to [Moses Olafenwa](https://twitter.com/OlafenwaMoses), [John Olafenwa](https://twitter.com/johnolafenwa) and the rest of the team in [ImageAI](http://imageai.org/#) for making our lives so much easier.
