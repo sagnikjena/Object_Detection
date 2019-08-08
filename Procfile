@@ -1,1 +1,1 @@
-web gunicorn obj_detect:app
+web: gunicorn obj_detect:app
