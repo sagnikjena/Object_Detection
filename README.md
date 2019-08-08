@@ -26,4 +26,4 @@ python obj_detect.py
 ### Result page:
 ![](static/images/screenshot4.jpg)
 
-A big shoutout to [Moses Olafenwa](https://twitter.com/OlafenwaMoses), [John Olafenwa](https://twitter.com/johnolafenwa) and the rest of the team in [ImageAI](http://imageai.org/#) for making our lives so much easier.
+A big shoutout to [Moses Olafenwa](https://twitter.com/OlafenwaMoses), [John Olafenwa](https://twitter.com/johnolafenwa) and the rest of the team at [ImageAI](http://imageai.org/#) for making our lives so much easier.
