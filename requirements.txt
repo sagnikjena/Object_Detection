@@ -3,6 +3,7 @@ scipy
 opencv-python
 flask
 Flask-RESTful
+Flask-Uploads
 pillow
 gunicorn
 matplotlib
