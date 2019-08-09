@@ -1,5 +1,5 @@
 # Object Detection with ImageAI
-A minimalistic web application using flask restful API to detect objects in an image.
+A minimalistic web application using flask restful API and ImageAI to detect objects in an image.
 
 ## How to use?
 1. Clone this repository:
