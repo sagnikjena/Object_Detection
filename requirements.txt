@@ -2,7 +2,6 @@ numpy
 scipy
 opencv-python
 flask
-Flask-RESTful
 Flask-Uploads
 pillow
 matplotlib
